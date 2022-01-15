@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/principat/ts-event-bus/actions/workflows/node.js.yml/badge.svg)](https://github.com/principat/ts-event-bus/actions/workflows/node.js.yml)
+
 # Typescript event bus
 
 Simple event bus that was written in typescript
