@@ -1,5 +1,5 @@
 {
-  "name": "ts-event-bus",
+  "name": "@ra-solutions/ts-event-bus",
   "version": "1.0.0",
   "description": "simple event bus written in typescript ",
   "main": "src/index.js",
