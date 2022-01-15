@@ -7,13 +7,13 @@ Simple event bus that was written in typescript
 ## Install
 
 ```
-npm install @principatra/ts-event-bus
+npm install @ra-solutions/ts-event-bus
 ```
 
 ## Usage
 
 ```typescript
-import { eventBus } from "ts-event-bus";
+import { eventBus } from "@ra-solutions/ts-event-bus";
 
 const myEventBus = eventBus();
 
@@ -33,4 +33,17 @@ myEventBus.fireEvent('sayHello', 'tom');
  * call the unsubscribe function, returned form subscribeEvent to unsubscribe from the event
  */
 unsubscribeSayHello();
+```
+
+You could use multiple instances of the event bus.
+
+## Recommendation
+
+Instead of calling `fireEvent` with the event name directly, it is recommended to create a 
+caller function for each event type:
+
+```
+function sayHello(name: string){
+  myEventBus.fireEvent('sayHello', name);
+}
 ```
