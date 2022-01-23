@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "commonjs",
     "allowJs": true,
@@ -9,9 +8,12 @@
     "esModuleInterop": true,
     "moduleResolution": "node"
   },
+  "include": [
+    "src/"
+  ],
   "exclude": [
     "node_modules",
-    "tests",
+    "**/*.test.*",
     "dist"
   ]
 }
