@@ -1,1 +1,1 @@
-export type Subscriber = (eventData?: unknown) => void
+export type Subscriber<PayloadDataType = unknown> = (eventData?: PayloadDataType) => void
